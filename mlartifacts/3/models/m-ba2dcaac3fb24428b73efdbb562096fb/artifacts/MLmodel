@@ -1,0 +1,35 @@
+artifact_path: mlflow-artifacts:/3/models/m-ba2dcaac3fb24428b73efdbb562096fb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-ba2dcaac3fb24428b73efdbb562096fb
+model_size_bytes: 406951
+model_uuid: m-ba2dcaac3fb24428b73efdbb562096fb
+prompts: null
+run_id: e1e6a0a7331442d1830156f34d15b743
+signature:
+  inputs: '[{"type": "long", "name": "Pclass", "required": true}, {"type": "long",
+    "name": "Sex", "required": true}, {"type": "double", "name": "Age", "required":
+    true}, {"type": "long", "name": "SibSp", "required": true}, {"type": "long", "name":
+    "Parch", "required": true}, {"type": "double", "name": "Fare", "required": true},
+    {"type": "long", "name": "Embarked", "required": true}, {"type": "long", "name":
+    "FamilySize", "required": true}, {"type": "long", "name": "IsAlone", "required":
+    true}, {"type": "long", "name": "Title", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-24 20:31:39.816921'
